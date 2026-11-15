@@ -1,5 +1,5 @@
-import react, { useEffect, useState, useRef } from "react";
-import { useSpring, animated, useScroll, useSpringValue } from "react-spring";
+import { useEffect, useState, useRef } from "react";
+import { useSpring, animated, useScroll } from "react-spring";
 import { CodeBlock } from "./Common";
 
 export function UseScroll() {
@@ -68,7 +68,7 @@ export const MyComponent2 = () => {
     // const ref = useRef(null);
     const ref = useRef<HTMLDivElement>(null);
 
-    const scrollYProgress = useSpring({
+    useSpring({
         scrollY,
         from: { scrollY: 0 },
         to: { scrollY: 1 },

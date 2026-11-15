@@ -2,7 +2,7 @@ import React from "react";
 import { useTransition, animated } from "react-spring";
 
 export function UseTransition({ data = [1, 2, 5] }) {
-    const [transitions, api] = useTransition(data, () => ({
+    useTransition(data, () => ({
         from: { opacity: 0 },
         enter: { opacity: 0.5 },
         leave: { opacity: 0 },

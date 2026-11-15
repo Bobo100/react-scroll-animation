@@ -1,4 +1,3 @@
-import react from 'react';
 import { UseSpring } from '../components/useSpring';
 import { UseSprings } from '../components/useSprings';
 import { UseTransition, MyComponent } from '../components/useTransition';
