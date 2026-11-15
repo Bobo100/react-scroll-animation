@@ -1,6 +1,6 @@
 
-import react, { useEffect, useState, useRef } from "react";
-import { useSpring, animated, useScroll, useSpringValue } from "react-spring";
+import { useRef } from "react";
+import { useSpring, animated, useScroll } from "react-spring";
 import styles from './css/styles.module.scss';
 
 const X_LINES = 40

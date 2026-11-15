@@ -1,5 +1,5 @@
 import { useSpring, animated } from "react-spring";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { Common, CommonWithOutFlex, CodeBlock } from "./Common";
 
 export const UseSpring = () => {
@@ -49,7 +49,7 @@ export const UseSpring = () => {
 
 
     const [toggle4, setToggle4] = useState(false);
-    const [props4, apitest] = useSpring(
+    const [props4] = useSpring(
         () => ({
             from: { x: 0 },
             to: async (next) => {

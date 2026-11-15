@@ -19,7 +19,7 @@ export function UseSprings() {
     // )
 
     const [show, setShow] = useState(true);
-    const [springs, api] = useSprings(
+    const [springs] = useSprings(
         // 這邊的數字是指有幾個animated.div
         4,
         () => ({
@@ -30,7 +30,7 @@ export function UseSprings() {
     )
 
     const [toggle, setToggle] = useState(false);
-    const [props2, api2] = useSprings(
+    const [props2] = useSprings(
         2,
         () => ({
             to: {
@@ -41,7 +41,7 @@ export function UseSprings() {
     );
 
     const [toggle4, setToggle4] = useState(false);
-    const [props4, apitest] = useSprings(
+    const [props4] = useSprings(
         2,
         () => ({
             from: { x: 0 },
